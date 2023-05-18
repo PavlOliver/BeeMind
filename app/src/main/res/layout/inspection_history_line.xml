@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/dateT"
+        android:text="Date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.3"/>
+
+    <TextView
+        android:id="@+id/tempT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:text="Temp" />
+
+    <TextView
+        android:id="@+id/jobT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:text="Job description" />
+
+    <TextView
+        android:id="@+id/weightT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.3"
+        android:text="Weight" />
+
+    <TextView
+        android:id="@+id/hiveTempT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.3"
+        android:text="HiveTemp" />
+    <TextView
+        android:id="@+id/queenT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:text="Q" />
+
+</TableRow>

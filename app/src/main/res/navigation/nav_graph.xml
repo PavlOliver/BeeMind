@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.beemind.fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_hiveFragment"
+            app:destination="@id/hiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hiveFragment"
+        android:name="com.example.beemind.fragments.HiveFragment"
+        android:label="fragment_hive"
+        tools:layout="@layout/fragment_hive" >
+        <action
+            android:id="@+id/action_hiveFragment_to_inHive"
+            app:destination="@id/inHive" />
+    </fragment>
+    <fragment
+        android:id="@+id/inHive"
+        android:name="com.example.beemind.fragments.InHive"
+        android:label="fragment_in_hive"
+        tools:layout="@layout/fragment_in_hive" >
+        <action
+            android:id="@+id/action_inHive_to_cureFragment"
+            app:destination="@id/cureFragment" />
+        <action
+            android:id="@+id/action_inHive_to_inspectionFragment"
+            app:destination="@id/inspectionFragment" />
+        <action
+            android:id="@+id/action_inHive_to_monitoring2"
+            app:destination="@id/monitoring2" />
+    </fragment>
+    <fragment
+        android:id="@+id/cureFragment"
+        android:name="com.example.beemind.fragments.CureFragment"
+        android:label="fragment_cure"
+        tools:layout="@layout/fragment_cure" />
+    <fragment
+        android:id="@+id/inspectionFragment"
+        android:name="com.example.beemind.fragments.InspectionFragment"
+        android:label="fragment_inspection"
+        tools:layout="@layout/fragment_inspection" />
+    <fragment
+        android:id="@+id/monitoring2"
+        android:name="com.example.beemind.fragments.Monitoring"
+        android:label="fragment_monitoring"
+        tools:layout="@layout/fragment_monitoring" >
+        <action
+            android:id="@+id/action_monitoring2_to_graphFragment"
+            app:destination="@id/graphFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.example.beemind.fragments.GraphFragment"
+        android:label="fragment_graph"
+        tools:layout="@layout/fragment_graph" />
+</navigation>

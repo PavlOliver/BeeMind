@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/ownerE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Owner name" />
+
+    <EditText
+        android:id="@+id/register_numberE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Register Number" />
+
+    <EditText
+        android:id="@+id/emailE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="E-mail address" />
+
+    <EditText
+        android:id="@+id/phoneE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Phone number" />
+
+    <EditText
+        android:id="@+id/svfaE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="administation" />
+
+    <EditText
+        android:id="@+id/latE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="latitude" />
+
+    <EditText
+        android:id="@+id/lonE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="longitude" />
+
+
+    <Button
+        android:id="@+id/popup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bee_btn_style"
+        android:text="CONFIRM" />
+
+</LinearLayout>

@@ -2,10 +2,8 @@ package com.example.beemind.popUps
 
 import android.app.AlarmManager
 import android.app.PendingIntent
-import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.widget.LinearLayout
@@ -63,8 +61,7 @@ class DatePick {
                     val alarmManager =
                         context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
                     val intent = Intent(context, LocalNotification::class.java)
-                    Log.d(TAG,"msg is ${taskEdit.text}")
-                    intent.putExtra("mm", "${taskEdit.text}")
+                    intent.putExtra("1", "${taskEdit.text}")
                     val pendingIntent = PendingIntent.getBroadcast(
                         context,
                         0,
